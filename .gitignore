@@ -1,0 +1,15 @@
+# GitHub 100MB limit exclusions
+Drug_module/data/clean_drug_reviews.csv
+Drug_module/data/bert_enriched_reviews.csv
+Drug_module/data/nlp_processed_reviews.csv
+Clinical_Trial_module/Data/Clinical_Raw/ctg-studies.csv
+
+# Standard ignores
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+env/
+venv/
+.idea/
+.vscode/

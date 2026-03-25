@@ -1,0 +1,64 @@
+AI PHARMA DECISION INTELLIGENCE PLATFORM - SETUP GUIDE
+
+STEP 1: Clone the repository
+
+git clone <your-repo-link>
+cd AI_PHARMA_DECISION_PLATFORM
+
+--------------------------------------------------
+
+STEP 2: Create Virtual Environment (Recommended)
+
+python -m venv venv
+
+Activate:
+
+Mac/Linux:
+source venv/bin/activate
+
+Windows:
+venv\Scripts\activate
+
+--------------------------------------------------
+
+STEP 3: Install Dependencies
+
+pip install -r requirements.txt
+
+--------------------------------------------------
+
+STEP 4: Run the Streamlit App
+
+streamlit run app/app.py
+
+--------------------------------------------------
+
+STEP 5: Open Browser
+
+http://localhost:8501
+
+--------------------------------------------------
+
+IMPORTANT NOTES:
+
+1. Ensure Python version is 3.10 or 3.11
+2. Do NOT mix conda and pip environments
+3. If XGBoost errors occur:
+   pip install xgboost==1.7.6
+
+4. If TensorFlow not found:
+   pip install tensorflow
+
+--------------------------------------------------
+
+PROJECT MODULES:
+
+- Drug Intelligence Dashboard
+- Patient Insights
+- Demand Forecasting (ML + LSTM)
+- Decision Intelligence
+- Clinical Trial Prediction
+
+--------------------------------------------------
+
+DONE 🚀
