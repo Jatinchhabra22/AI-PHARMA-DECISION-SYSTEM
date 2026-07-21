@@ -28,16 +28,15 @@ st.sidebar.page_link("pages/7_About_Model.py", label="About Model", icon="ℹ️
 import xgboost as xgb
 
 # LOAD MODEL (JSON WAY)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 model = xgb.XGBClassifier()
 try:
-    model.load_model(os.path.join(BASE_DIR, "Clinical_Trial_module", "Models", "clinical", "model.json"))
+    model.load_model("Clinical_Trial_module/Models/clinical/model.json")
 except Exception:
     st.error("Model file not found!")
 
 # LOAD COLUMNS
 try:
-    columns = pickle.load(open(os.path.join(BASE_DIR, "Clinical_Trial_module", "Models", "clinical", "columns.pkl"), "rb"))
+    columns = pickle.load(open("Clinical_Trial_module/Models/clinical/columns.pkl", "rb"))
     columns = list(columns)
 except Exception:
     st.error("Columns file not found!")

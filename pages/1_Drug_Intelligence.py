@@ -8,12 +8,11 @@ import ast
 st.set_page_config(page_title="Drug Intelligence Dashboard", page_icon="💊", layout="wide")
 
 # Paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA_PATH = os.path.join(BASE_DIR, "Drug_module", "data", "Final_data", "drug_final_enriched_dataset.csv")
-DEMAND_MODEL_PATH = os.path.join(BASE_DIR, "Drug_module", "Models", "demand_model.pkl")
-DEMAND_FEATURES_PATH = os.path.join(BASE_DIR, "Drug_module", "Models", "demand_features.pkl")
-EFFECTIVENESS_MODEL_PATH = os.path.join(BASE_DIR, "Drug_module", "Models", "effectiveness_model.pkl")
-EFFECTIVENESS_FEATURES_PATH = os.path.join(BASE_DIR, "Drug_module", "Models", "effectiveness_features.pkl")
+DATA_PATH = os.path.join("Drug_module", "data", "Final_data", "drug_final_enriched_dataset.csv")
+DEMAND_MODEL_PATH = os.path.join("Drug_module", "Models", "demand_model.pkl")
+DEMAND_FEATURES_PATH = os.path.join("Drug_module", "Models", "demand_features.pkl")
+EFFECTIVENESS_MODEL_PATH = os.path.join("Drug_module", "Models", "effectiveness_model.pkl")
+EFFECTIVENESS_FEATURES_PATH = os.path.join("Drug_module", "Models", "effectiveness_features.pkl")
 
 def fix_xgboost_model_compatibility(model):
     """

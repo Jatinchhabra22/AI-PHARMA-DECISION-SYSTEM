@@ -7,8 +7,7 @@ import ast
 st.set_page_config(page_title="Decision Intelligence", page_icon="🧠", layout="wide")
 
 # Paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA_PATH = os.path.join(BASE_DIR, "Drug_module", "data", "Final_data", "drug_final_enriched_dataset.csv")
+DATA_PATH = os.path.join("Drug_module", "data", "Final_data", "drug_final_enriched_dataset.csv")
 
 # Functions
 @st.cache_data

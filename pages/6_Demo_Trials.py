@@ -9,9 +9,8 @@ import xgboost as xgb
 st.set_page_config(page_title="Demo Trials", page_icon="📂", layout="wide")
 
 # Paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MODEL_PATH = os.path.join(BASE_DIR, "Clinical_Trial_module", "Models", "clinical", "model.json")
-COLS_PATH = os.path.join(BASE_DIR, "Clinical_Trial_module", "Models", "clinical", "columns.pkl")
+MODEL_PATH = "Clinical_Trial_module/Models/clinical/model.json"
+COLS_PATH = "Clinical_Trial_module/Models/clinical/columns.pkl"
 
 # Functions
 @st.cache_resource
